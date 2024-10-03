@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
+.hero,
+.hero__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero__container {
+  position: relative;
+}
+.hero__container > img {
+  width: 100%;
+}
+.topNav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 1rem;
+  background-color: #eee;
+  font-family: sans-serif "Miriam Libre", sans-serif;
+}
+
+.topNav span {
+  width: 20px;
+  /* padding: 0 1rem; */
+  margin: 0 1rem;
+}
+.topNav p {
+  font-family: "Miriam Libre", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.topNav p > span {
+  font-weight: bold;
+}
+.BottomNav {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.BottomNav ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #eee;
+  z-index: 999;
+  background-color: red;
+}
+.BottomNav ul li {
+  font-family: "Miriam Libre", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Handjet", sans-serif;
+}
+.BottomNav img {
+  width: 120px;
+}
+.hero_slider {
+  width: 100%;
+  position: relative;
+}
+.hero_slider .swiper {
+  width: 100%;
+  height: auto;
+  z-index: 50;
+}
+.hero_slider .swiper .swiper-slide > img {
+  height: 700px;
+  width: 100%;
+}
+.hero_slider .swiper .swiper-slide p,
+.hero_slider .swiper .swiper-slide span,
+.hero_slider .swiper .swiper-slide .shop_now,
+.hero_slider .swiper .swiper-slide .logo_bottom,
+.hero_slider .swiper .swiper-slide .hero_ratings {
+  position: absolute;
+  color: #eee;
+  font-size: 5rem;
+  font-weight: bold;
+  z-index: 99999;
+  top: 30%;
+  width: 350px;
+  left: 18%;
+  font-family: "Handjet", sans-serif;
+}
+.hero_slider .swiper .swiper-slide p {
+  width: 300px;
+}
+.hero_slider .swiper .swiper-slide span {
+  font-family: "Miriam Libre", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.hero_slider .swiper .swiper-slide .logo_bottom {
+  top: 75%;
+  width: 450px;
+  left: 70%;
+}
+.hero_slider .swiper .swiper-slide .logo_bottom img {
+  width: 300px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero_slider .swiper .swiper-slide .logo_bottom img:last-child {
+  top: 30px;
+}
+.hero_slider .swiper .swiper-slide span {
+  font-size: 1.5rem;
+  top: 65%;
+  width: 250px;
+  left: 18%;
+}
+.hero_slider .swiper .swiper-slide .shop_now {
+  top: 78%;
+  width: 250px;
+  height: auto;
+  left: 16%;
+}
+.navbar_bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 99999;
+  margin-top: 1rem;
+}
+.navbar_bottom ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  color: #eee;
+  font-weight: bold;
+}
+.navbar_bottom img {
+  width: 200px;
+  margin-right: 5rem;
+}
+.navbar_bottom .icons_nav {
+  color: #eee;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+.navbar_bottom .icons_nav img {
+  width: 64px;
+}
+.hero_slider .swiper .swiper-slide .hero_ratings {
+  font-size: 1rem;
+  top: 94%;
+  width: 450px;
+  left: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.hero_slider .swiper .swiper-slide .hero_ratings img {
+  width: 120px;
+}
+.swiper .swiper-button-next {
+  background-image: url("../../../public/images/02.png");
+}
+.swiper .swiper-button-prev {
+  background-image: url("../../../public/images/03.png");
+}
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  background-size: 12rem;
+  width: 170px;
+  height: 200px;
+  background-repeat: no-repeat;
+}
+.swiper .swiper-button-next::after,
+.swiper .swiper-button-prev::after {
+  display: none;
+}
+.swiper .swiper-pagination {
+  color: gray;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 16rem;
+  font-size: 1.2rem;
+}
+.hero > img {
+  width: 100%;
+  height: 200px;
+  z-index: 5;
+  position: absolute;
+  top: 110%;
+}

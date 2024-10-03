@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
+.Influence {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #222;
+  margin-top: -200px;
+}
+.Influence_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Influence_container h2 {
+  color: #eee;
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4rem;
+  letter-spacing: 10px;
+}
+.slider_show {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider_show .swiper {
+  width: 100%;
+  height: 600px;
+}
+.slider_show .swiper .swiper-slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.slider_show .swiper .swiper-slide img {
+  width: 100%;
+}
+.slider_show .swiper .swiper-slide .slider_content {
+  position: absolute;
+  left: 10%;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.slider_show .swiper .swiper-slide .slider_content h2 {
+  font-size: 6rem;
+  font-family: "Handjet", sans-serif;
+  font-weight: normal;
+}
+.slider_show .swiper .swiper-slide .slider_content span {
+  color: #eee;
+  width: 200px;
+  font-family: "Miriam Libre", sans-serif;
+}
+.slider_show .swiper .swiper-slide .slider_content p {
+  color: #eee;
+  font-family: "Miriam Libre", sans-serif;
+  font-weight: normal;
+}
+.slider_show .swiper .swiper-slide .slider_content img {
+  width: 250px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: -50px;
+}
+.slider_show .swiper .swiper-slide .slider_content .stars_rating {
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.slider_show .swiper .swiper-slide .slider_content .stars_rating img {
+  width: 100px;
+}
+.slider_show .swiper .swiper-slide .slider_content .stars_rating p {
+  font-family: "Miriam Libre", sans-serif;
+  font-weight: bold;
+}
+.fadeImage {
+  width: 100%;
+  margin-top: -150px;
+}

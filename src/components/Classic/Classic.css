@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
+.HardTo,
+.HardTo_container,
+.classic_container {
+  background-color: #222;
+  color: #eee;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.HardTo .classic_container {
+  flex-direction: row;
+  height: 600px;
+  margin-top: -120px;
+  z-index: 1;
+  background-color: #222;
+}
+.HardTo_container .left_align {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.HardTo_container .classic_left_align {
+  margin-top: 8rem;
+}
+.hardto_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.hardto_logo img {
+  position: absolute;
+  width: 350px;
+  top: -80px;
+}
+.hardto_logo img:last-child {
+  width: 200px;
+}
+.top_rated {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  gap: 1rem;
+}
+.top_rated p {
+  font-size: 7rem;
+  font-family: "Handjet", sans-serif;
+}
+.top_rated span {
+  font-size: 1.2rem;
+  font-family: "Miriam Libre", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.top_rated img {
+  width: 200px;
+  margin-bottom: 2rem;
+  margin-left: -9rem;
+}
+.right_align {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 3rem;
+}
+.right_align .hardTo_prod {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.hardto_prod_tShirt {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.right_align .hardTo_prod .hardto_prod_tShirt img {
+  width: 350px;
+  position: absolute;
+  visibility: visible;
+}
+.right_align .hardTo_prod .hardto_prod_tShirt img:last-child {
+  width: 550px;
+  opacity: 1;
+}
+.right_align .hardTo_prod span {
+  position: absolute;
+  top: 25rem;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.right_align .next {
+  position: absolute;
+  top: 16rem;
+}
+.next img {
+  width: 50px;
+}
+.fade {
+  filter: blur(4px);
+}
+.hardTo_prod > video {
+  width: 250px;
+  position: absolute;
+  top: 130px;
+  opacity: 0;
+}
+
+.topNav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 1rem;
+  background-color: #eee;
+  font-family: sans-serif "Miriam Libre", sans-serif;
+}
+.topNav p {
+  font-family: sans-serif "Miriam Libre", sans-serif;
+  font-weight: bold;
+}
+.topNav p > span {
+  font-weight: bold;
+}
+.shaps_k2k {
+  position: absolute;
+  left: 0;
+}

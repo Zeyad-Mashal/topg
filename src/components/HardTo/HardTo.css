@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
+.HardTo,
+.HardTo_container {
+  color: #eee;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.HardTo {
+  background-color: #222;
+}
+.HardTo_container {
+  flex-direction: row;
+  margin-top: 12rem;
+}
+.HardTo_container .left_align {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.hardto_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.hardto_logo img {
+  position: absolute;
+  width: 300px;
+}
+.hardto_logo img:last-child {
+  top: -40px;
+  width: 180px;
+}
+.top_rated {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+}
+.top_rated p {
+  font-size: 7rem;
+  font-family: "Handjet", sans-serif;
+}
+.top_rated span {
+  font-size: 1.2rem;
+  font-family: "Miriam Libre", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.top_rated img {
+  width: 200px;
+  margin-bottom: 2rem;
+  margin-left: -9rem;
+}
+.right_align {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 3rem;
+}
+.right_align .hardTo_prod {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: 0.5s ease;
+}
+.right_align .hardTo_prod img {
+  width: 350px;
+  position: absolute;
+  transition: 0.5s ease;
+}
+.right_align .hardTo_prod .imgShirt {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  opacity: 1;
+  transition: 0.5s ease;
+  position: absolute;
+  top: 50px;
+}
+.right_align .next {
+  position: absolute;
+  top: 16rem;
+}
+.next img {
+  width: 50px;
+}
+.fade {
+  filter: blur(4px);
+}
+.hardTo_prod video {
+  position: absolute;
+  top: 67px;
+  opacity: 0;
+  width: 30%;
+  height: 391px;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+.right_align .hardTo_prod:hover .imgShirt {
+  opacity: 0;
+}
+.right_align .hardTo_prod:hover video {
+  opacity: 1;
+}
+.topNav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 1rem;
+  background-color: #eee;
+  font-family: sans-serif "Miriam Libre", sans-serif;
+}
+.topNav p {
+  font-family: sans-serif "Miriam Libre", sans-serif;
+  font-weight: bold;
+}
+.topNav p > span {
+  font-weight: bold;
+}
+.hardto_collections {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.hardto_collections p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: sans-serif "Miriam Libre", sans-serif;
+}
+.hardto_collections_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin: 0 1rem;
+}
+.hardto_collections_content img {
+  width: 100px;
+}
+.hardto_collections_content::before {
+  content: "";
+  width: 120%;
+  height: 5px;
+  background-color: #eee;
+  position: absolute;
+  left: -10px;
+  top: 50px;
+}
+.hardto_collections_content svg {
+  position: absolute;
+  bottom: -3px;
+  font-size: 1.8rem;
+}
+.fadeFilter {
+  filter: blur(5px);
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+.shaps_k2k {
+  position: absolute;
+  z-index: 7;
+}
+.shaps_k2k img {
+  width: 550px;
+  opacity: 0.5;
+}

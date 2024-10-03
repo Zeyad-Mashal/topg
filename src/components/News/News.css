@@ -1,0 +1,72 @@
+.news {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #222;
+  height: 500px;
+  margin-top: -1rem;
+}
+.news_contanier {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 5;
+}
+.news_shapes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 0;
+}
+.news_shapes img {
+  width: 100%;
+}
+.news_contanier h2,
+.news_contanier h1 {
+  z-index: 5;
+  color: #eee;
+}
+.news_contanier h1 {
+  font-size: 4rem;
+  font-family: "Handjet", sans-serif;
+  letter-spacing: 10px;
+}
+.input_field {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  position: relative;
+  margin-top: 2rem;
+  left: -30px;
+}
+.input_field input {
+  padding: 1rem;
+  border-radius: 10px 0 0 10px;
+  background-color: #000;
+  width: 100%;
+  box-shadow: 4px 4px 10px #444;
+  color: #fff;
+}
+.input_field button {
+  padding: 12px;
+  position: absolute;
+  right: -50px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  width: 100px;
+  font-family: "Handjet", sans-serif;
+  letter-spacing: 5px;
+}
+.news_contanier p {
+  z-index: 5;
+  color: #eee;
+  margin-top: 1.5rem;
+}
