@@ -76,7 +76,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  gap: 3rem;
+  gap: 0rem;
 }
 .right_align .hardTo_prod {
   width: 300px;
