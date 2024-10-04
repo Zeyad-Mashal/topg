@@ -68,10 +68,10 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  gap: 3rem;
+  gap: 2rem;
 }
 .right_align .hardTo_prod {
-  width: 300px;
+  width: 280px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -83,7 +83,7 @@
   transition: 0.5s ease;
 }
 .right_align .hardTo_prod .imgShirt {
-  width: 450px;
+  width: 250px;
   height: 450px;
   object-fit: cover;
   opacity: 1;
@@ -100,6 +100,9 @@
 }
 .fade {
   filter: blur(4px);
+  transform: scale(0.9);
+  position: absolute;
+  top: 30px;
 }
 .hardTo_prod video {
   position: absolute;
@@ -110,12 +113,7 @@
   object-fit: cover;
   transition: 0.3s ease-in-out;
 }
-.right_align .hardTo_prod:hover .imgShirt {
-  opacity: 0;
-}
-.right_align .hardTo_prod:hover video {
-  opacity: 1;
-}
+
 .topNav {
   width: 100%;
   display: flex;
@@ -138,7 +136,7 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-bottom: 1.5rem;
+  margin: 5rem 0 1.5rem 0;
 }
 .hardto_collections p {
   font-size: 1.2rem;
@@ -182,4 +180,68 @@
 .shaps_k2k img {
   width: 550px;
   opacity: 0.5;
+}
+.product_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative; /* Changed to absolute for smooth transitions */
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+.product_item.active {
+  order: 1;
+  opacity: 1;
+  z-index: 2;
+  transform: scale(1);
+  filter: blur(0px);
+  top: 0px;
+  transition: 0.5s linear;
+}
+
+.product_item.inactive {
+  order: 2;
+  opacity: 1;
+  z-index: 1;
+  transform: scale(0.8);
+  filter: blur(4px);
+  top: 50px;
+  transition: 0.5s linear;
+}
+.hardTo_prod_content {
+  position: absolute;
+  top: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.hardTo_prod_content p {
+  color: rgb(225, 0, 0);
+  font-size: 1.8rem;
+  font-family: "Handjet", sans-serif;
+  letter-spacing: 5px;
+  font-weight: normal;
+}
+.hardTo_prod_content h2 {
+  font-size: 2rem;
+  font-family: "Handjet", sans-serif;
+  letter-spacing: 5px;
+}
+.hardTo_prod_content span {
+  color: rgb(225, 0, 0);
+  font-size: 1.8rem;
+  font-family: "Handjet", sans-serif;
+  letter-spacing: 5px;
+  font-weight: normal;
+}
+.right_align .hardTo_prod:hover .imgShirt {
+  opacity: 0;
+}
+.right_align .hardTo_prod:hover video {
+  opacity: 1;
 }

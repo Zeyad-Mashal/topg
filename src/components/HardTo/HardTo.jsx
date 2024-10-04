@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./HardTo.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTruckFast, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import barsImage from "../../images/bars.png";
 import h2kImage from "../../images/h2k-logo.png";
+
 import shopImage from "../../images/shop.png";
 import SELECTION_BOX_image from "../../images/SELECTION_BOX[MAIN].png";
 import shirtImage from "../../images/PNG.png";
+import shirtclassic from "../../images/hoodi_kill.png";
+import hoodi3d from "../../images/Hard to Kill Tee H.mp4";
 import h2kVideo from "../../images/1920x1920.mp4";
 import NextImage from "../../images/NEXT.png";
 import smoke2 from "../../images/smoke2.png";
 const HardTo = () => {
+  const productRef = useRef(null);
+  const nextProductRef = useRef(null);
+  const [isProductOneActive, setIsProductOneActive] = useState(true);
+
+  const handleNextClick = () => {
+    setIsProductOneActive((prev) => !prev);
+  };
+
   return (
     <>
       <section className="HardTo">
@@ -30,24 +41,55 @@ const HardTo = () => {
             </div>
           </div>
           <div className="right_align">
-            <div className="hardTo_prod">
-              <img src={SELECTION_BOX_image} alt="" />
-              <img src={shirtImage} alt="" className="imgShirt" />
-              <video
-                src={h2kVideo}
-                autoPlay
-                muted
-                loop
-                className="video"
-              ></video>
-            </div>
-            <div className="next">
-              <img src={NextImage} alt="" />
-            </div>
-            <div className="hardTo_prod fade">
-              <div className="hardto_prod_tShirt">
+            <div
+              ref={productRef}
+              className={`product_item ${
+                isProductOneActive ? "active" : "inactive"
+              }`}
+            >
+              <div className="hardTo_prod">
                 <img src={SELECTION_BOX_image} alt="" />
                 <img src={shirtImage} alt="" className="imgShirt" />
+                <video
+                  src={h2kVideo}
+                  autoPlay
+                  muted
+                  loop
+                  className="video"
+                ></video>
+              </div>
+              <div className="hardTo_prod_content">
+                <p>NEW</p>
+                <h2>HARD TO KILL [TEE]</h2>
+                <span>$69</span>
+              </div>
+            </div>
+
+            <div className="next" onClick={handleNextClick}>
+              <img src={NextImage} alt="" />
+            </div>
+
+            <div
+              ref={nextProductRef}
+              className={`product_item ${
+                isProductOneActive ? "inactive" : "active"
+              }`}
+            >
+              <div className="hardTo_prod">
+                <img src={SELECTION_BOX_image} alt="" />
+                <img src={shirtclassic} alt="" className="imgShirt" />
+                <video
+                  src={hoodi3d}
+                  autoPlay
+                  muted
+                  loop
+                  className="video"
+                ></video>
+              </div>
+              <div className="hardTo_prod_content">
+                <p>NEW</p>
+                <h2>HARD TO KILL [TEE]</h2>
+                <span>$99</span>
               </div>
             </div>
           </div>
