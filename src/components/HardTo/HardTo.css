@@ -94,6 +94,7 @@
 .right_align .next {
   position: absolute;
   top: 16rem;
+  cursor: pointer;
 }
 .next img {
   width: 50px;
