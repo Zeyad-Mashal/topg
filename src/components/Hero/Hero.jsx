@@ -17,7 +17,14 @@ import {
   faCartShopping,
   faTruckFast,
 } from "@fortawesome/free-solid-svg-icons";
-
+import imageLogo from "../../images/image.png";
+import MATRIX from "../../images/MATRIX.png";
+import herobanner1 from "../../images/00.png";
+import herobanner2 from "../../images/000.png";
+import shopImage from "../../images/shop.png";
+import barsImage from "../../images/bars.png";
+import STARSImage from "../../images/STARS.png";
+import fadeImage from "../../images/fade.png";
 const Hero = () => {
   return (
     <section className="hero">
@@ -37,12 +44,12 @@ const Hero = () => {
             <li>GET FIREBLOOD</li>
             <li>GET G-OFFEE</li>
           </ul>
-          <img src="/images/image.png" alt="" />
+          <img src={imageLogo} alt="" />
           <div className="icons_nav">
             <FontAwesomeIcon icon={faMagnifyingGlass} />
             <FontAwesomeIcon icon={faUser} />
             <FontAwesomeIcon icon={faCartShopping} />
-            <img src="/images/MATRIX.png" alt="" />
+            <img src={MATRIX} alt="" />
           </div>
         </div>
         <Swiper
@@ -54,38 +61,38 @@ const Hero = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img src="/images/00.png" alt="" />
+            <img src={herobanner1} alt="" />
             <p>COBRA’S SHIELD</p>
             <span>Don your armour. Repel weakness. Win.</span>
-            <img src="/images/shop.png" alt="" className="shop_now" />
+            <img src={shopImage} alt="" className="shop_now" />
             <div className="logo_bottom">
-              <img src="/images/bars.png" alt="" />
-              <img src="/images/image.png" alt="" />
+              <img src={barsImage} alt="" />
+              <img src={imageLogo} alt="" />
             </div>
             <div className="hero_ratings">
-              <img src="/images/STARS.png" alt="" />
+              <img src={STARSImage} alt="" />
               <h4>Rated by +100,000 men of distinction.</h4>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/images/000.png" alt="" />
+            <img src={herobanner2} alt="" />
             <p>HARD TO KILL</p>
             <span>
               TAKE YOUR REST SHOT.. <br /> THIS WARRIOR REMAINS UNFAZED
             </span>
-            <img src="/images/shop.png" alt="" className="shop_now" />
+            <img src={shopImage} alt="" className="shop_now" />
             <div className="logo_bottom">
-              <img src="/images/bars.png" alt="" />
-              <img src="/images/image.png" alt="" />
+              <img src={barsImage} alt="" />
+              <img src={imageLogo} alt="" />
             </div>
             <div className="hero_ratings">
-              <img src="/images/STARS.png" alt="" />
+              <img src={STARSImage} alt="" />
               <h4>Rated by +100,000 men of distinction.</h4>
             </div>
           </SwiperSlide>
         </Swiper>
       </div>
-      <img src="/images/fade.png" alt="" />
+      <img src={fadeImage} alt="" />
     </section>
   );
 };

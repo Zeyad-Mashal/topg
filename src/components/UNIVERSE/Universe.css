@@ -12,20 +12,22 @@
   font-style: normal;
   font-variation-settings: "ELGR" 1, "ELSH" 2;
   background-color: #333;
+  position: relative;
 }
 
 .Universe_container {
-  background-image: url("../../../public/images/06.png");
+  background-image: url("../../images/06.png");
   width: 100%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 1000px;
+  padding-bottom: 3rem;
 }
 .prod_container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 2.5rem;
 }
 .fire_item {
   width: 35%;
@@ -45,7 +47,7 @@
 }
 .fire_item .img_item {
   width: 350px;
-  margin-top: 10rem;
+  margin-top: 15rem;
   transition: 0.3s ease;
 }
 .fire_item .img_item:hover {
@@ -78,27 +80,28 @@
   font-weight: 400;
   font-style: normal;
 }
-.img_sparetor {
-  width: 100%;
-  margin-top: -220px;
-  z-index: 5;
-}
-.img_sparetor img {
-  width: 100%;
-}
 .item_footer {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  z-index: 6;
+  z-index: 999;
   font-family: "Handjet", sans-serif;
-  margin-top: 3rem;
+  margin: 2rem;
+  position: absolute;
+  bottom: -30px;
 }
 .item_footer img {
   width: 45px;
 }
 .item_footer p {
   color: #eee;
+}
+.Universe > img {
+  width: 100%;
+  height: 200px;
+  z-index: 5;
+  position: absolute;
+  top: 87%;
 }

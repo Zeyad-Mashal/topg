@@ -15,7 +15,8 @@
 .HardTo .classic_container {
   flex-direction: row;
   height: 600px;
-  margin-top: -120px;
+  margin-top: -10px;
+  padding-top: 1rem;
   z-index: 1;
   background-color: #222;
 }

@@ -1,5 +1,8 @@
 import React from "react";
 import "./Footer.css";
+import footer_logo from "../../images/footer_logo.png";
+import insta from "../../images/insta.png";
+import x from "../../images/x.png";
 const Footer = () => {
   return (
     <section className="footer">
@@ -29,12 +32,12 @@ const Footer = () => {
           <div className="footer_item">
             <h3>MY ACCOUNT</h3>
             <div className="footer_imgs">
-              <img src="/images/x.png" alt="" />
-              <img src="/images/insta.png" alt="" />
+              <img src={x} alt="" />
+              <img src={insta} alt="" />
             </div>
           </div>
           <div className="footer_item">
-            <img src="/images/footer_logo.png" alt="" />
+            <img src={footer_logo} alt="" />
           </div>
         </div>
       </div>

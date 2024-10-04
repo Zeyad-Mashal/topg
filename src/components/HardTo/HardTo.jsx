@@ -2,6 +2,14 @@ import React from "react";
 import "./HardTo.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTruckFast, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import barsImage from "../../images/bars.png";
+import h2kImage from "../../images/h2k-logo.png";
+import shopImage from "../../images/shop.png";
+import SELECTION_BOX_image from "../../images/SELECTION_BOX[MAIN].png";
+import shirtImage from "../../images/PNG.png";
+import h2kVideo from "../../images/1920x1920.mp4";
+import NextImage from "../../images/NEXT.png";
+import smoke2 from "../../images/smoke2.png";
 const HardTo = () => {
   return (
     <>
@@ -9,8 +17,8 @@ const HardTo = () => {
         <div className="HardTo_container">
           <div className="left_align">
             <div className="hardto_logo">
-              <img src="/images/bars.png" alt="" />
-              <img src="/images/h2k-logo.png" alt="" />
+              <img src={barsImage} alt="" />
+              <img src={h2kImage} alt="" />
             </div>
             <div className="top_rated">
               <p>TOP- RATED</p>
@@ -18,15 +26,15 @@ const HardTo = () => {
                 Community favorites – shop now to secure your picks before
                 they’re gone.
               </span>
-              <img src="/images/shop.png" alt="" />
+              <img src={shopImage} alt="" />
             </div>
           </div>
           <div className="right_align">
             <div className="hardTo_prod">
-              <img src="/images/SELECTION_BOX[MAIN].png" alt="" />
-              <img src="/images/PNG.png" alt="" className="imgShirt" />
+              <img src={SELECTION_BOX_image} alt="" />
+              <img src={shirtImage} alt="" className="imgShirt" />
               <video
-                src="/images/1920x1920.mp4"
+                src={h2kVideo}
                 autoPlay
                 muted
                 loop
@@ -34,12 +42,12 @@ const HardTo = () => {
               ></video>
             </div>
             <div className="next">
-              <img src="/images/Next.png" alt="" />
+              <img src={NextImage} alt="" />
             </div>
             <div className="hardTo_prod fade">
               <div className="hardto_prod_tShirt">
-                <img src="/images/SELECTION_BOX[MAIN].png" alt="" />
-                <img src="/images/PNG.png" alt="" />
+                <img src={SELECTION_BOX_image} alt="" />
+                <img src={shirtImage} alt="" className="imgShirt" />
               </div>
             </div>
           </div>
@@ -47,12 +55,12 @@ const HardTo = () => {
         <div className="hardto_collections">
           <p>COLLECTIONS:</p>
           <div className="hardto_collections_content">
-            <img src="/images/h2k-logo.png" alt="" />
+            <img src={h2kImage} alt="" />
             <FontAwesomeIcon icon={faChevronUp} />
           </div>
         </div>
         <div className="shaps_k2k">
-          <img src="/images/smoke2.png" alt="" />
+          <img src={smoke2} alt="" />
         </div>
       </section>
       <div className="topNav">

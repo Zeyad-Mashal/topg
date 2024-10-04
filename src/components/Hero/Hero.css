@@ -75,7 +75,7 @@
   z-index: 50;
 }
 .hero_slider .swiper .swiper-slide > img {
-  height: 700px;
+  height: 100vh;
   width: 100%;
 }
 .hero_slider .swiper .swiper-slide p,
@@ -177,10 +177,10 @@
   width: 120px;
 }
 .swiper .swiper-button-next {
-  background-image: url("../../../public/images/02.png");
+  background-image: url("../../images/02.png");
 }
 .swiper .swiper-button-prev {
-  background-image: url("../../../public/images/03.png");
+  background-image: url("../../images/03.png");
 }
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
@@ -207,5 +207,5 @@
   height: 200px;
   z-index: 5;
   position: absolute;
-  top: 110%;
+  top: 91%;
 }

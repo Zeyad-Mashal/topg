@@ -8,6 +8,10 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper/modules";
 import "./Influence.css";
+import STARSImage from "../../images/STARS.png";
+import SHOPDNGImage from "../../images/SHOPDNG.png";
+import section_bg from "../../images/section_bg.png";
+import fadeImage from "../../images/fade.png";
 const Influence = () => {
   return (
     <>
@@ -28,13 +32,13 @@ const Influence = () => {
                     Top G clashes with the forces of tyranny in the darkest
                     depths of his own mind.
                   </p>
-                  <img src="/images/SHOPDNG.png" alt="" />
+                  <img src={SHOPDNGImage} alt="" />
                   <div className="stars_rating">
-                    <img src="/images/STARS.png" alt="" />
+                    <img src={STARSImage} alt="" />
                     <p>Marked by +80,000 as the “Fan’s Favorite”.</p>
                   </div>
                 </div>
-                <img src="/images/section_bg.png" alt="" />
+                <img src={section_bg} alt="" />
               </SwiperSlide>
               <SwiperSlide>
                 <div className="slider_content">
@@ -44,20 +48,19 @@ const Influence = () => {
                     Top G clashes with the forces of tyranny in the darkest
                     depths of his own mind.
                   </p>
-                  <img src="/images/SHOPDNG.png" alt="" />
+                  <img src={SHOPDNGImage} alt="" />
                   <div className="stars_rating">
-                    <img src="/images/STARS.png" alt="" />
+                    <img src={STARSImage} alt="" />
                     <p>Marked by +80,000 as the “Fan’s Favorite”.</p>
                   </div>
                 </div>
-                <img src="/images/section_bg.png" alt="" />
+                <img src={section_bg} alt="" />
               </SwiperSlide>
             </Swiper>
           </div>
         </div>
       </section>
-      <img src="/images/fade.png" alt="" className="fadeImage" />
-
+      <img src={fadeImage} alt="" className="fadeImage" />
     </>
   );
 };

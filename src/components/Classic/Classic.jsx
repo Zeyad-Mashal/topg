@@ -2,6 +2,15 @@ import React from "react";
 import "./Classic.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTruckFast, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import barsImage from "../../images/bars.png";
+import classicImage from "../../images/classic-logo.png";
+import k2kImage from "../../images/h2k-logo.png";
+import shopImage from "../../images/shop.png";
+import SELECTION_BOX_image from "../../images/SELECTION_BOX[MAIN].png";
+import shirtImage from "../../images/classic_png.png";
+import class3dVideo from "../../images/class_3d.mp4";
+import NextImage from "../../images/NEXT.png";
+import smoke2 from "../../images/smoke2.png";
 const Classic = () => {
   return (
     <>
@@ -9,23 +18,23 @@ const Classic = () => {
         <div className="HardTo_container classic_container">
           <div className="left_align classic_left_align">
             <div className="hardto_logo">
-              <img src="/images/bars.png" alt="" />
-              <img src="/images/classic-logo.png" alt="" />
+              <img src={barsImage} alt="" />
+              <img src={classicImage} alt="" />
             </div>
             <div className="top_rated">
               <p>JUST IN</p>
               <span>
                 The latest in outdoor innovation - here today, gone tomorrow.
               </span>
-              <img src="/images/shop.png" alt="" />
+              <img src={shopImage} alt="" />
             </div>
           </div>
           <div className="right_align">
             <div className="hardTo_prod">
-              <img src="/images/SELECTION_BOX[MAIN].png" alt="" />
-              <img src="/images/classic_png.png" alt="" className="imgShirt" />
+              <img src={SELECTION_BOX_image} alt="" />
+              <img src={shirtImage} alt="" className="imgShirt" />
               <video
-                src="/images/class_3d.mp4"
+                src={class3dVideo}
                 autoPlay
                 muted
                 loop
@@ -33,23 +42,23 @@ const Classic = () => {
               ></video>
             </div>
             <div className="next">
-              <img src="/images/Next.png" alt="" />
+              <img src={NextImage} alt="" />
             </div>
             <div className="hardTo_prod fade">
               <div className="hardto_prod_tShirt">
-                <img src="/images/SELECTION_BOX[MAIN].png" alt="" />
-                <img src="/images/classic_png.png" alt="" />
+                <img src={SELECTION_BOX_image} alt="" />
+                <img src={shirtImage} alt="" className="imgShirt" />
               </div>
             </div>
           </div>
           <div className="shaps_k2k">
-            <img src="/images/smoke2.png" alt="" />
+            <img src={smoke2} alt="" />
           </div>
         </div>
         <div className="hardto_collections">
           <p>COLLECTIONS:</p>
           <div className="hardto_collections_content">
-            <img src="/images/h2k-logo.png" alt="" />
+            <img src={k2kImage} alt="" />
             <FontAwesomeIcon icon={faChevronUp} />
           </div>
         </div>
