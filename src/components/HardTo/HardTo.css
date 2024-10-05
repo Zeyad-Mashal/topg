@@ -211,6 +211,7 @@
   filter: blur(4px);
   top: 50px;
   transition: 0.5s linear;
+  pointer-events: none;
 }
 .hardTo_prod_content {
   position: absolute;
@@ -240,9 +241,9 @@
   letter-spacing: 5px;
   font-weight: normal;
 }
-.right_align .hardTo_prod:hover .imgShirt {
+.right_align .product_item .hardTo_prod:hover .imgShirt {
   opacity: 0;
 }
-.right_align .hardTo_prod:hover video {
+.right_align .product_item .hardTo_prod:hover video {
   opacity: 1;
 }
